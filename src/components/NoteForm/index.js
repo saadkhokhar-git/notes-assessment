@@ -63,17 +63,19 @@ const NoteForm = () => {
     setShowForm(true);
   };
 
-  const handleEditHandler = (id) => {
-    notes.map((note) => {
-      if (note?.id === id) {
-        console.log("Condition success", note);
-        setID(note.id);
-        setTitle(note.title);
-        setDescription(note.description);
-      }
-    });
+const handleEditHandler = (id) => {
+  const note = notes.find((note) => note?.id === id);
+
+  if (note) {
+    console.log("Condition success", note);
+    setID(note.id);
+    setTitle(note.title);
+    setDescription(note.description);
     setShowForm(true);
-  };
+  } else {
+    console.log("Note not found with ID:", id);
+  }
+};
 
   return (
     <div className="note-main">

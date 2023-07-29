@@ -1,0 +1,95 @@
+.sidebar {
+  width: 20%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+  height: 100vh;
+  border-right: 2px solid black;
+  overflow-y: scroll;
+}
+
+.sidebar .note-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  justify-items: center;
+}
+
+span.note-title {
+  font-weight: bold;
+  color: #333;
+  font-size: x-large;
+}
+
+.sidebar-heading {
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #c84141;
+  cursor: pointer;
+  border-color: black;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}
+
+.sidebar button {
+  /* background-color: #c84141; */
+  border: 1px solid black;
+  border-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 0.75rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar-toggle-btn {
+  display: none;
+  background-color: #c84141;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    float: none;
+    border-right: none;
+  }
+
+  .sidebar-toggle-btn {
+    display: block;
+  }
+
+  .note-form-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,92 @@
+.note-main {
+  height: 100vh;
+  background-color: white;
+}
+
+.note-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.note-form-heading {
+  text-align: center;
+  color: #760a0a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(232, 232, 232);
+  border-color: rgb(5, 0, 8);
+}
+
+.icon-contains {
+  color: gray;
+  cursor: pointer;
+}
+
+.button-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form {
+  padding: 10px;
+  background-color: rgb(121 121 121);
+  border-radius: 5px;
+}
+
+.abc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: x-large;
+}
+
+.titleText {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  height: 25px;
+  width: 250px;
+  margin-top: 1rem;
+}
+
+.descText {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  height: 65px;
+}
+
+@media only screen and (max-width: 768px) {
+  .note-form-container {
+    flex-direction: column;
+  }
+
+  .note-form {
+    width: 100%;
+  }
+}

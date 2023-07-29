@@ -1,0 +1,20 @@
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: burlywood;
+  padding: 20px;
+}
+
+.note-form {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+}
